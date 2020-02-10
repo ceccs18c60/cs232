@@ -1,0 +1,56 @@
+CEC CS 18 C60
+ VISHNU S S
+
+--------------------------------
+#1: Networking tasks (t3)
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+        ifconfig -a
+	route -n
+	route add default gw 192.168.0.2
+	ping 192.168.0.1 		
+	cat /etc/resolv.conf
+        echo "nameserver 1.1.1.1" >> resolv.conf
+
+Input: (If relevant)
+---------------
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+-------------------
+        # ifconfig -a displays all available network interfaces
+	
+	# route -n displays kernal routing table
+	
+	# route add, is used add a new route to the table,
+	# route add default gw 192.168.0.2, a default gateway in this case
+
+	# echo "nameserver 1.1.1.1" >> /etc/resolv.conf
+	# to add 1.1.1.1 (1.1.1.1 is the DNS of Cloudflare) to system domain resolver configuration
+
+Remarks if any:
+
+	# s4c1@proxysrvr:~/ceccs18c60/cs232$ route add default gw 192.168.0.2
+          SIOCADDRT: Operation not permitted
+
+	# student user wasn't in the sudoers list so I could not manipulate the routing table or access resolv.conf
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:
+
+#3:
+
+#4:
+
+#5:
+
+
+

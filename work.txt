@@ -1,0 +1,67 @@
+Script started on Monday 10 February 2020 10:48:55 AM IST
+]0;s4c1@proxysrvr: ~/ceccs18c60/cs232[01;32ms4c1@proxysrvr[00m:[01;34m~/ceccs18c60/cs232[00m$ in[Kfconfig
+enp0s25   Link encap:Ethernet  HWaddr 00:24:81:1f:b8:a0  
+          inet addr:192.168.0.58  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::78d2:aec8:fbdb:bdc2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:229303 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24153 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37417283 (37.4 MB)  TX bytes:4689796 (4.6 MB)
+          Interrupt:19 Memory:f0500000-f0520000 
+
+enp7s4    Link encap:Ethernet  HWaddr 00:0b:2b:0b:83:3f  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:33078 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:33078 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2212068 (2.2 MB)  TX bytes:2212068 (2.2 MB)
+
+]0;s4c1@proxysrvr: ~/ceccs18c60/cs232[01;32ms4c1@proxysrvr[00m:[01;34m~/ceccs18c60/cs232[00m$ ifconfig -a
+enp0s25   Link encap:Ethernet  HWaddr 00:24:81:1f:b8:a0  
+          inet addr:192.168.0.58  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::78d2:aec8:fbdb:bdc2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:229431 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24165 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37428845 (37.4 MB)  TX bytes:4691794 (4.6 MB)
+          Interrupt:19 Memory:f0500000-f0520000 
+
+enp7s4    Link encap:Ethernet  HWaddr 00:0b:2b:0b:83:3f  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:33110 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:33110 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2214116 (2.2 MB)  TX bytes:2214116 (2.2 MB)
+
+]0;s4c1@proxysrvr: ~/ceccs18c60/cs232[01;32ms4c1@proxysrvr[00m:[01;34m~/ceccs18c60/cs232[00m$ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+link-local      *               255.255.0.0     U     1000   0        0 enp0s25
+192.168.0.0     *               255.255.254.0   U     100    0        0 enp0s25
+]0;s4c1@proxysrvr: ~/ceccs18c60/cs232[01;32ms4c1@proxysrvr[00m:[01;34m~/ceccs18c60/cs232[00m$ route -a[Kn
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 enp0s25
+192.168.0.0     0.0.0.0         255.255.254.0   U     100    0        0 enp0s25
+]0;s4c1@proxysrvr: ~/ceccs18c60/cs232[01;32ms4c1@proxysrvr[00m:[01;34m~/ceccs18c60/cs232[00m$ route -n[Kifconfig -a[K[4Pexitcho "nameserver 1.1.1.1" >> resolv.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcat /etc/resolv.conf[3Pping 192.168.0.83route add default gw 192.168.0.2
+SIOCADDRT: Operation not pe
