@@ -1,0 +1,198 @@
+Script started on 2020-03-25 12:52:18+0530
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ [K]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ if cong[Kfig[1Pconfig[C[C[C[C[C
+enp2s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:d8:61:03:bc:f1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 874  bytes 83685 (83.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 874  bytes 83685 (83.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlo1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.43.239  netmask 255.255.255.0  broadcast 192.168.43.255
+        inet6 fe80::c1c:6b7f:8046:c0e8  prefixlen 64  scopeid 0x20<link>
+        ether dc:8b:28:82:d6:97  txqueuelen 1000  (Ethernet)
+        RX packets 10617  bytes 11072512 (11.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6145  bytes 878987 (878.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+route -n
+default         _gateway        0.0.0.0         UG    600    0        0 wlo1
+link-local      0.0.0.0         255.255.0.0     U     1000   0        0 wlo1
+192.168.43.0    0.0.0.0         255.255.255.0   U     600    0        0 wlo1
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.43.1    0.0.0.0         UG    600    0        0 wlo1
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wlo1
+192.168.43.0    0.0.0.0         255.255.255.0   U     600    0        0 wlo1
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ route add defalut[1Pt[1Ptutlt[C gw 192.168.0.2
+SIOCADDRT: Operation not permitted
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ route add default gw 192.168.0.2[K[K.30
+SIOCADDRT: Operation not permitted
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ route add default gw 192.168.0.30[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpling[K[K[K[King 192.168.0.11[K
+PING 192.168.0.1 (192.168.0.1) 56(84) bytes of data.
+^[[B    ^C
+--- 192.168.0.1 ping statistics ---
+228 packets transmitted, 0 received, 100% packet loss, time 232363ms
+
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ cat ping 192.168.0.1route add default gw 192.168.0.30[1P2-n[K[Kifconfigsystemd-resolve --statusudo nano /etc/resolv.conf route -n[Ksudo nano /etc/resolv.conf [1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@t[1@a[C[1@ [1P[1P[1P[1@a[1@t[C[1@ 
+# This file is managed by man:systemd-resolved(8). Do not edit.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "systemd-resolve --status" to see details about the uplink DNS servers
+# currently in use.
+#
+# ThirScript started on 2020-03-26 02:46:23+0530
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ exit
+Script started on 2020-03-26 11:23:09+0530
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ ssh csc18c60@14.139.189.217
+ssh: connect to host 14.139.189.217 port 22: Network is unreachable
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ ssh csc18c60@14.139.189.217[1P18c60@14.139.189.217
+ssh: connect to host 14.139.189.217 port 22: Network is unreachable
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ ssh cs18c60@14.139.189.217
+ssh: connect to host 14.139.189.217 port 22: Network is unreachable
+]0;vishnu@MSI: ~/ceccsc60/task3[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/task3[00m$ ssh cs18c60@14.139.189.217
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c60@14.139.189.217's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+420 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 26 11:13:02 2020 from 106.200.28.234
+$ rr sync
+rsync  version 3.1.1  protocol version 31
+Copyright (C) 1996-2014 by Andrew Tridgell, Wayne Davison, and others.
+Web site: http://rsync.samba.org/
+Capabilities:
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    socketpairs, hardlinks, symlinks, IPv6, batchfiles, inplace,
+    append, ACLs, xattrs, iconv, symtimes, prealloc
+
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you
+are welcome to redistribute it under certain conditions.  See the GNU
+General Public Licence for details.
+
+rsync is a file transfer program capable of efficient remote update
+via a fast differencing algorithm.
+
+Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+to an rsync daemon, and require SRC or DEST to start with a module name.
+
+Options
+ -v, --verbose               increase verbosity
+     --info=FLAGS            fine-grained informational verbosity
+     --debug=FLAGS           fine-grained debug verbosity
+     --msgs2stderr           special output handling for debugging
+ -q, --quiet                 suppress non-error messages
+     --no-motd               suppress daemon-mode MOTD (see manpage caveat)
+ -c, --checksum              skip based on checksum, not mod-time & size
+ -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+     --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+ -r, --recursive             recurse into directories
+ -R, --relative              use relative path names
+     --no-implied-dirs       don't send implied dirs with --relative
+ -b, --backup                make backups (see --suffix & --backup-dir)
+     --backup-dir=DIR        make backups into hierarchy based in DIR
+     --suffix=SUFFIX         set backup suffix (default ~ w/o --backup-dir)
+ -u, --update                skip files that are newer on the receiver
+     --inplace               update destination files in-place (SEE MAN PAGE)
+     --append                append data onto shorter files
+     --append-verify         like --append, but with old data in file checksum
+ -d, --dirs                  transfer directories without recursing
+ -l, --links                 copy symlinks as symlinks
+ -L, --copy-links            transform symlink into referent file/dir
+     --copy-unsafe-links     only "unsafe" symlinks are transformed
+     --safe-links            ignore symlinks that point outside the source tree
+     --munge-links           munge symlinks to make them safer (but unusable)
+ -k, --copy-dirlinks         transform symlink to a dir into referent dir
+ -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+ -H, --hard-links            preserve hard links
+ -p, --perms                 preserve permissions
+ -E, --executability         preserve the file's executability
+     --chmod=CHMOD           affect file and/or directory permissions
+ -A, --acls                  preserve ACLs (implies --perms)
+ -X, --xattrs                preserve extended attributes
+ -o, --owner                 preserve owner (super-user only)
+ -g, --group                 preserve group
+     --devices               preserve device files (super-user only)
+     --specials              preserve special files
+ -D                          same as --devices --specials
+ -t, --times                 preserve modification times
+ -O, --omit-dir-times        omit directories from --times
+ -J, --omit-link-times       omit symlinks from --times
+     --super                 receiver attempts super-user activities
+     --fake-super            store/recover privileged attrs using xattrs
+ -S, --sparse                handle sparse files efficiently
+     --preallocate           allocate dest files before writing them
+ -n, --dry-run               perform a trial run with no changes made
+ -W, --whole-file            copy files whole (without delta-xfer algorithm)
+ -x, --one-file-system       don't cross filesystem boundaries
+ -B, --block-size=SIZE       force a fixed checksum block-size
+ -e, --rsh=COMMAND           specify the remote shell to use
+     --rsync-path=PROGRAM    specify the rsync to run on the remote machine
+     --existing              skip creating new files on receiver
+     --ignore-existing       skip updating files that already exist on receiver
+     --remove-source-files   sender removes synchronized files (non-dirs)
+     --del                   an alias for --delete-during
+     --delete                delete extraneous files from destination dirs
+     --delete-before         receiver deletes before transfer, not during
+     --delete-during         receiver deletes during the transfer
+     --delete-delay          find deletions during, delete after
+     --delete-after          receiver deletes after transfer, not during
+     --delete-excluded       also delete excluded files from destination dirs
+     --ignore-missing-args   ignore missing source args without error
+     --delete-missing-args   delete missing source args from destination
+     --ignore-errors         delete even if there are I/O errors
+     --force                 force deletion of directories even if not empty
+     --max-delete=NUM        don't delete more than NUM files
+     --max-size=SIZE         don't transfer any file larger than SIZE
+     --min-size=SIZE         don't transfer any file smaller than SIZE
+     --partial               keep partially transferred files
+     --partial-dir=DIR       put a partially transferred file into DIR
+     --delay-updates         put all updated files into place at transfer's end
+ -m, --prune-empty-dirs      prune empty directory chains from the file-list
+     --numeric-ids           don't map uid/gid values by user/group name
+     --usermap=STRING        custom username mapping
+     --groupmap=STRING       custom groupname mapping
+     --chown=USER:GROUP      simple username/groupname mapping
+     --timeout=SECONDS       set I/O timeout in seconds
+     --contimeout=SECONDS    set daemon connection timeout in seconds
+ -I, --ignore-times          don't skip files that match in size and mod-time
+ -M, --remote-option=OPTION  send OPTION to the remote side only
+     --size-only             skip files that match in size
+     --modify-window=NUM     compare mod-times with reduced accuracy
+ -T, --temp-dir=DIR          create temporary files in directory DIR
+ -y, --fuzzy                 find similar file for basis if no dest file
+     --compare-dest=DIR      also compare destination files relative to DIR
+     --copy-dest=DIR         ... and 

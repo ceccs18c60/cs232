@@ -1,0 +1,36 @@
+CEC CS 18 C60
+VISHNU S S
+
+--------------------------------
+#1: CREATE WEB PAGE AT SERVER (t9)
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+ index.html contains the html code for requried table with head cell as follows:
+ 		No.
+		Experiment description
+		Code link
+ 		Date of upload
+		report
+		result link
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+-------------------
+
+      file:///home/s4c1/ceccs18c60/cs232/28-02/index.html
+
+---------------------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+

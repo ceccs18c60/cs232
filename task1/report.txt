@@ -1,0 +1,49 @@
+CEC CS 18 C60
+VISHNU S S
+
+--------------------------------
+#1: Familiarisation of Linux commands
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+        pwd
+        cd 
+        alias l
+        alias ll
+        alias ls
+        free -h
+        free -m
+        uname -a
+	wget 192.168.0.30
+	head -n 11 index.html
+        whoami 
+---------------
+
+--------------------------------
+Output:
+	# Shows Working directory
+     
+        # List all directory 
+        
+        # wget fetches the HTML file
+	index.html	
+	
+	# head prints the 'n' lines from the top
+	
+	# whoami prints the current user
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+
+

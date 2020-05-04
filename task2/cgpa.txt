@@ -1,0 +1,9 @@
+BEGIN{
+   RS=" "
+}
+{
+   no_sub=NF-1
+    print(NF)
+		
+		
+}

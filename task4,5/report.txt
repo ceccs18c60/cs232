@@ -1,0 +1,50 @@
+ CEC CS 18 C60
+ VISHNU S S
+
+--------------------------------
+ #1: ftp usage
+---------------------------------
+Command/Shell script/Program name
+
+ sftp cs18c05@192.168.0.30 - to access the server
+ mkdir - used to make a directory
+ put filename.txt - to upload the given file to the server
+ get filename.txt - used to retieve the file from the server
+ rm filename.txt - used to remove a file from the server
+ bye - to exit the ftp server
+---------------------------------
+
+Input: (If relevant)
+---------------
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:  Networking tasks
+     
+ Command/Shell script/Program name
+   ---------------------------------
+  ifconfig -a - displays all available network 
+  route -n - displays kernal routing table
+  route add default gw 192.168.0.20 - used to add new route
+  ping 192.168.0.1 - used to reachability of server		
+  cat /etc/resolv.conf
+ --------------------------------
+  Output: 
+ --------------------------------
+
+ -------------------
+ Remarks if any:
+ -------------------
+ didnt have access as superuser
+

@@ -1,0 +1,25 @@
+Script started on 2020-03-17 23:11:57+0530
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;vishnu@MSI: ~/ceccsc60/date[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/date[00m$ ls
+work.txt
+]0;vishnu@MSI: ~/ceccsc60/date[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/date[00m$ ls -l
+total 0
+-rw-r--r-- 1 vishnu vishnu 0 Mar 17 23:11 work.txt
+]0;vishnu@MSI: ~/ceccsc60/date[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/date[00m$ ls -lt
+total 0
+-rw-r--r-- 1 vishnu vishnu 0 Mar 17 23:11 work.txt
+]0;vishnu@MSI: ~/ceccsc60/date[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/date[00m$ alias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+]0;vishnu@MSI: ~/ceccsc60/date[01;32mvishnu@MSI[00m:[01;34m~/ceccsc60/date[00m$ exit
+exit
+
+Script done on 2020-03-17 23:20:11+0530
